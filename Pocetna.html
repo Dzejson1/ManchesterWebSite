@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="sr">
+<head>
+	<meta charset="UTF-8">	
+	
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/styleMenu.css">
+
+
+	<script type="text/javascript" src="scripts/scriptMenu.js"></script>
+
+
+	<script>
+
+
+/* MARQUEE */
+
+	var myMarquee, myMarqueeDiv;
+	var windowWidth = window.innerWidth;
+	var counterOut = 0;
+	var startStop=0;
+
+	function loadMarquee() {
+		myMarqueeDiv = document.getElementById('innerMarquee');
+		myMarquee = setInterval('scrollMarquee()',5);
+	}
+
+	function scrollMarquee() {
+		if(windowWidth > 0){
+			windowWidth-=1;
+			myMarqueeDiv.style.marginLeft = windowWidth+'px';
+		}
+		else {
+			counterOut +=1;
+			if( counterOut < window.innerWidth ){
+				myMarqueeDiv.style.marginLeft = '-'+(counterOut)+'px';
+			}
+			else{
+				myMarqueeDiv.style.marginLeft = 'window.innerWidth';
+				counterOut = 0;
+				windowWidth = window.innerWidth;
+			}
+		}
+		return true;
+	}
+
+
+	function startStopMarquee(){
+		if(!startStop) {
+			clearInterval(myMarquee);
+			startStop=1;
+		}
+		else {
+			loadMarquee();
+			startStop=0; }
+		return true;
+	}
+
+/* MARQUEE */
+
+
+	</script>
+	
+
+	<style>	
+	
+#body.home div.header div h1{        
+	background-color:#F5F5F5;
+    color: #660000;
+    animation: mymove 5s infinite;  
+} 
+
+
+@keyframes mymove {
+    50% {box-shadow: 10px 20px 30px maroon;}
+	from {color: black;}
+	to{color:darkred;}
+
+}
+
+div#marquee {
+    height:2em;
+	line-height:2em;
+	width:100%;
+    overflow:hidden;
+	border:1px #660000 solid;
+    background:#660000;
+	color: #FFF;
+	font-weight:bold;
+  }
+
+  div#innerMarquee { margin-left:-99999999px; }
+
+
+	</style>
+
+</head>
+
+<body onload="loadMarquee()">
+
+    <div class="toTop" style="position:fixed;bottom:50px;right:50px;width:50px;z-index:99999;"><a href="#top" ><img src="images/toTop.png" alt=""></a></div>   	
+
+	<div id="page" >
+		 <div id="header" style="background-color:#dfbfbf;">
+			<div id="navigation">
+				<a href="Pocetna.html" class="logo"><img src="images/grbLogo.jpg" id="imgId"  alt="" title="Manchester United - Početna"></a>
+				  <ul id="sddm">
+					<li class="selected" ><a href="Pocetna.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Početna</a></li>
+					<li><a href="Istorija.html" onmouseover="mopen('m2')" onmouseout="mclosetime()">Istorija</a>
+						<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+							<a href="Galerija.html">Galerija</a>
+						</div>
+					</li>
+					<li><a href="Uspesi.html" onmouseover="mopen('m3')" onmouseout="mclosetime()">Uspesi</a>
+						<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+						<a href="Uspesi1.html">Premijer Liga</a>
+						<a href="Uspesi2.html">Liga šampiona</a>
+						<a href="Uspesi3.html">FA Cup</a>
+						</div>
+					</li>
+					<li><a href="Legende.html" onmouseover="mopen('m4')" onmouseout="mclosetime()">Legende</a>
+						<div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+						<a href="Legende1.html">Aleks Ferguson</a>
+						<a href="Legende2.html">Peter Šmajhel</a>
+						<a href="Legende3.html">Dejvid Bekam</a>
+						<a href="Legende4.html">Rajan Gigs</a>
+						</div>
+					</li>
+					<li><a href="Komentari.html" onmouseover="mopen('m5')" onmouseout="mclosetime()">Komentari</a></li>
+				</ul>
+
+			    </div>
+
+			<div>
+
+				<div id='marquee' onclick='startStopMarquee(); return false;' title="Click to stop/start Marquee">
+					<div id='innerMarquee'> ****** Pale teške reči:sukob na relaciji FIFA-UEFA!   ******   Trener DC Junajteda: Želimo Runija, nema još dogovora!   ******
+						Murinjo: Drugo mesto je OK, ali ga ne slavimo!   ******  Više nego zasluženo - De Hea će poneti "Zlatnu rukavicu" ****** </div>
+				 </div>
+
+			</div>
+
+
+           </div>
+
+
+                                                 <!-- SADRZAJ-->
+
+			
+			 
+		<div id="body" class="home" >
+			<!--style="background-color:#FFFFFF;"-->
+
+			 <div class="header" >
+			 
+				<div >				
+					<h1 >MANČESTER JUNAJTED<br>PREMIJER LIGA</h1> 
+					 <img src="images/pocetnacentar.png"  alt=""> 
+				</div>
+			</div> 
+			<div class="body">
+				<div>
+					<h1>ŠAMPIONI</h1>
+					<p>Najtrofejniji klub u Engleskoj!Najuspešniji engleski i evropski fudbalski klub. Crveni đavoli u nove pobede!</p>
+					<!-- <a href="https://sr.m.wikipedia.org/sr-el/ФК_Манчестер_јунајтед" class="more">Detaljnije...</a> -->
+					<a href="Animacija.html" class="more" style="background: black;font-weight: 300;">Animacija</a>
+				</div>
+			</div>								
+		</div>
+		
+		
+												 <!-- SADRZAJ-->
+		
+
+			
+				
+		<div id="footer">
+			<div>
+				<div class="connect">
+					<a href="https://twitter.com/ManUtd" class="twitter">twitter</a>
+					<a href="https://www.facebook.com/manchesterunited/" class="facebook">facebook</a>
+					<a href="https://plus.google.com/+ManUtd" class="googleplus">googleplus</a>
+					<a href="https://www.pinterest.com/manutd/" class="pinterest">pinterest</a>	
+				</div>
+				<p>&copy; 2018 Popović Marko. All rights reserved.</p>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
+

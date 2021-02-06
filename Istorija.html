@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="sr">
+<head>
+	<meta charset="UTF-8">
+	<title>Istorija</title>
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/styleMenu.css">
+
+
+	<script type="text/javascript" src="scripts/scriptMenu.js"></script>
+	
+	
+	
+	<style>	
+	
+#body.home div.header div h1{        
+	background-color:#F5F5F5;
+    color: maroon;
+    -webkit-animation: mymove 5s infinite; 
+    animation: mymove 5s infinite;  
+} 
+ 
+@-webkit-keyframes mymove {
+    50% {box-shadow: 10px 20px 30px maroon;}
+	from {color: black;}
+    to {color: maroon;}
+}
+
+@keyframes mymove {
+    50% {box-shadow: 10px 20px 30px maroon;}
+	from {color: black;}
+}  
+
+	</style>
+			
+</head>
+<body>
+
+    <div class="toTop" style="position:fixed;bottom:50px;right:50px;width:50px;z-index:99999;"><a href="#top" ><img src="images/toTop.png" alt=""></a></div>   	
+
+	<div id="page">
+		<div id="header" style="background-color:#dfbfbf;">
+			<div id="navigation">
+				<a href="Pocetna.html" class="logo" title="Manchester United - Početna"><img src="images/grbLogo.jpg" alt=""></a>
+				<ul id="sddm">
+					<li class="selected" ><a href="Pocetna.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Početna</a></li>
+					<li><a href="Istorija.html" onmouseover="mopen('m2')" onmouseout="mclosetime()">Istorija</a>
+						<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+							<a href="Galerija.html">Galerija</a>
+						</div>
+					</li>
+					<li><a href="Uspesi.html" onmouseover="mopen('m3')" onmouseout="mclosetime()">Uspesi</a>
+						<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+							<a href="Uspesi1.html">Premijer Liga</a>
+							<a href="Uspesi2.html">Liga šampiona</a>
+							<a href="Uspesi3.html">FA Cup</a>
+						</div>
+					</li>
+					<li><a href="Legende.html" onmouseover="mopen('m4')" onmouseout="mclosetime()">Legende</a>
+						<div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+							<a href="Legende1.html">Aleks Ferguson     </a>
+							<a href="Legende2.html">Peter Šmajhel      </a>
+							<a href="Legende3.html">Dejvid Bekam       </a>
+							<a href="Legende4.html">Rajan Gigs         </a>
+						</div>
+					</li>
+					<li><a href="Komentari.html" onmouseover="mopen('m5')" onmouseout="mclosetime()">Komentari</a></li>
+				</ul>
+			</div>
+		</div>
+			
+														<!-- SADRZAJ-->
+		
+		<div id="body">
+			<div>
+				<h1>ISTORIJA</h1>
+				<img src="images/istorijaMU.png" alt="">
+				<h2>Počeci (1878—1945)</h2>
+				<p>Klub je osnovan 1878. godine pod imenom Fudbalski klub Njuton hit LJR. Osnovali su ga radnici železnice u Njuton heltu. Boje dreseva su bile zelena i zlatna. Tokom prvih 15 godina postojanja, klub je svoje utakmice kao domaćin igrao na Nort roud stadionu, a 1893. preselio na Benk strit stadion.</p>
+				<h2>Bezbijeva era (1945—1969)</h2>
+				<p>Mat Bezbi je postavljen za menadžera oktobra 1945. Vodio je tim do osvajanja druge pozicije u prvenstvu u tri uzastopne sezone 1946, 1947. i 1948. Mančester junajted je prvu titulu prvaka nakon 41 godine osvojio 1952 a prvenstvo 1956, sa timom čija je prosečna starost iznosila 22 godine, i zbog njihove mladosti novinari su generaciju kluba prozvali Bezbijevim bebama.</p>
+				<h2>1969—1986</h2>
+				<p>Nakon osvojenog osmog mesta u sezoni 1969/70. i lošeg starta u sezoni 1970/71, uprava dovodi Bezbija na mesto menadžera 1971. godine, a nakon toga je zamenjen Tomijem Doertijem  1972. godine.U sezoni 1985/86. Junajted je odlično počeo sezonu i bio neporažen u prvih 15 kola.</p>
+				<h2>Fergusonova era (1986—2013)</h2>
+				<p>Aleks Ferguson i njegov pomoćnik Arči Noks su prešli iz Aberdina u Junajted istog dana kada je Etkinson smenjen. Naredne sezone je Mančester junajted osvojio svoj prvi trofej u Kupu pobednika kupova a potom i UEFA superkup. Ferguson je dobio titulu Sera zbog doprinosa razvoju fudbala.</p>
+			</div>
+		</div>
+		
+														<!-- SADRZAJ-->
+		
+		<div id="footer">
+			<div>
+				<div class="connect">
+					<a href="https://twitter.com/ManUtd" class="twitter">twitter</a>
+					<a href="https://www.facebook.com/manchesterunited/" class="facebook">facebook</a>
+					<a href="https://plus.google.com/+ManUtd" class="googleplus">googleplus</a>
+					<a href="https://www.pinterest.com/manutd/" class="pinterest">pinterest</a>
+				</div>
+				<p>&copy; 2018 Popović Marko. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
